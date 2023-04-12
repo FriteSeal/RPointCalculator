@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Raid Point Calculator</title>
+  <script src="logic.js"></script>
+</head>
+
+
+<body>
+  <h1>Raid Point Calculator</h1>
+  <form>
+    <label for="scp999">Breached SCP-999:</label>
+    <select id="scp999" name="scp999">
+      <option value="0">N/A</option>
+      <option value="3">Within CZ</option>
+      <option value="5">Outside CZ</option>
+      <option value="10">Outside Sector C</option>
+    </select>
+    <br>
+    <label for="scp173">Breached SCP-173:</label>
+    <select id="scp173" name="scp173">
+      <option value="0">N/A</option>
+      <option value="7">Within CZ</option>
+      <option value="10">Outside CZ</option>
+      <option value="15">Outside Sector C</option>
+    </select>
+    <br>
+    <label for="scp606">Breached SCP-606:</label>
+    <select id="scp606" name="scp606">
+      <option value="0">N/A</option>
+      <option value="7">Within CZ</option>
+      <option value="10">Outside CZ</option>
+      <option value="15">Outside Sector C</option>
+    </select>
+    <br>
+    <label for="scp096">Breached SCP-096:</label>
+    <select id="scp096" name="scp096">
+      <option value="0">N/A</option>
+      <option value="15">Within CZ</option>
+      <option value="20">Outside CZ</option>
+      <option value="25">Outside Sector C</option>
+    </select>
+    <br>
+    <label for="scp106">Breached SCP-106:</label>
+    <select id="scp106" name="scp106">
+      <option value="0">N/A</option>
+      <option value="15">Within CZ</option>
+      <option value="20">Outside CZ</option>
+      <option value="25">Outside Sector C</option>
+    </select>
+    <br>
+    <label for="library">Library Held Period (0 if N/A):</label>
+    <input type="number" id="library" name="library" min="0" max="10">
+    <br>
+    <label for="shelter">Breach Shelter Held Period (0 if N/A):</label>
+    <input type="number" id="shelter" name="shelter" min="0" max="15">
+    <br>
+    <label for="classD">Class-D Hostage:</label>
+    <input type="number" id="classD" name="classD" min="0">
+    <br>
+    <label for="fp">FP Hostage:</label>
+    <input type="number" id="fp" name="fp" min="0">
+    <br>
+    <label for="vip">VIP Hostage (0 if N/A):</label>
+    <input type="number" id="vip" name="vip" min="0" max="10">
+    <br>
+    <strong>Final Score:</strong> <span id="final-score">0</span>
+    <br>
+    <strong>Final Outcome:</strong> <span id="final-outcome">-</span>
+  </form>
+</body>
+</html>
